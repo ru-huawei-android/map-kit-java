@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoutesActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_bicycling_route"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_bicycling_route"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button_walking_route"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_walking_route"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/button_driving_route"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_driving_route"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button_remove_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_all"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/avoid_toll_roads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avoid_toll_roads"/>
+
+        <CheckBox android:id="@+id/avoid_expressways"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avoid_expressways"/>
+
+        <CheckBox android:id="@+id/alternatives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alternatives"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <TextView
+            android:id="@+id/start_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="@string/start_text"
+            android:textColor="@android:color/holo_red_light"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.huawei.hms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:mapType="normal"
+        map:uiCompass="true"
+        map:uiZoomControls="true" />
+
+</LinearLayout>

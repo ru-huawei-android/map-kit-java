@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MapKitJava</string>
+    <string name="markers_demo">markers demo</string>
+    <string name="remove_markers">remove markers</string>
+    <string name="routes_demo">Routes Demo</string>
+    <string name="make_route">make route</string>
+    <string name="show_walking_route">show walking route</string>
+    <string name="show_bicycling_route">show bicycling route</string>
+    <string name="show_driving_route">show driving route</string>
+    <string name="remove_all">remove all</string>
+    <string name="start_text">Create 1st marker by long press on the map.</string>
+    <string name="second_step_text">Create second marker by long press on the map.</string>
+    <string name="third_step_text">Chose route type.</string>
+    <string name="last_step_text">OK.</string>
+    <string name="remove_50_markers">remove 50 markers</string>
+    <string name="big_marker_demo">marker demo 2</string>
+    <string name="clusterization_off">clusterization off</string>
+    <string name="clusterization_on">clusterization on</string>
+    <string name="emty">emty</string>
+    <string name="clean_map">clean map</string>
+    <string name="hide_markers">hide markers</string>
+    <string name="add_markers">add markers</string>
+    <string name="generate_markers">generate markers</string>
+    <string name="show_markers">show markers</string>
+    <string name="avoid_toll_roads">Avoid toll roads</string>
+    <string name="avoid_expressways">Avoid expressways</string>
+    <string name="alternatives">Alternatives</string>
+    <string name="title">Title</string>
+    <string name="SPB">Saint-petersburg</string>
+    <string name="russia">Russia</string>
+    <string name="snippet">Snippet</string>
+    <string name="marker_name">I\'m a new Marker</string>
+    <string name="moscow">Moscow</string>
+    <string name="sochi">Sochi</string>
+    <string name="marker_list_size">\"marker List size is: \"</string>
+</resources>
