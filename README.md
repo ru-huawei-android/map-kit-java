@@ -14,5 +14,4 @@
  
 # Документация
 
-- https://developer.huawei.com/consumer/en/doc/development/HMSCore-GuidesV5/dev-process-0000001050167616-V5
-- https://developer.huawei.com/consumer/en/doc/development/HMSCore-GuidesV5/android-sdk-introduction-0000001050158633-V5
+- https://developer.huawei.com/consumer/en/hms/huawei-MapKit/
