@@ -18,6 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/show_bicycling_route"
+            android:textSize="@dimen/textSize"
             android:layout_weight="1"/>
 
         <Button
@@ -25,6 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/show_walking_route"
+            android:textSize="@dimen/textSize"
             android:layout_weight="1"/>
     </LinearLayout>
 
@@ -39,6 +41,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/show_driving_route"
+            android:textSize="@dimen/textSize"
             android:layout_weight="1"/>
 
         <Button
@@ -46,6 +49,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/remove_all"
+            android:textSize="@dimen/textSize"
             android:layout_weight="1"/>
     </LinearLayout>
 
@@ -63,6 +67,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/avoid_expressways"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <CheckBox android:id="@+id/alternatives"
             android:layout_width="wrap_content"

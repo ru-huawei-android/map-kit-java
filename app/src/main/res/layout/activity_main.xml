@@ -9,18 +9,21 @@
     <Button
         android:id="@+id/button_markers"
         android:text="@string/markers_demo"
+        android:textSize="@dimen/textSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/button_big_marker"
         android:text="@string/big_marker_demo"
+        android:textSize="@dimen/textSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/button_routes"
         android:text="@string/routes_demo"
+        android:textSize="@dimen/textSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

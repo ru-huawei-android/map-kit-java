@@ -15,6 +15,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/generate_markers"
+            android:textSize="@dimen/textSize"
             android:id="@+id/button_generate_markers"
             android:layout_weight="1"/>
 
@@ -22,6 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/remove_markers"
+            android:textSize="@dimen/textSize"
             android:id="@+id/button_remove_markers_big"
             android:layout_weight="1"/>
     </LinearLayout>
@@ -35,6 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/remove_50_markers"
+            android:textSize="@dimen/textSize"
             android:id="@+id/button_remove_50_markers"
             android:layout_weight="1"/>
 
@@ -42,6 +45,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/clusterization_off"
+            android:textSize="@dimen/textSize"
             android:textColor="@android:color/darker_gray"
             android:id="@+id/button_clusterization"
             android:layout_weight="1"/>
@@ -56,6 +60,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/clean_map"
+            android:textSize="@dimen/textSize"
             android:id="@+id/button_clean_map"
             android:layout_weight="1"/>
 
@@ -63,6 +68,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/hide_markers"
+            android:textSize="@dimen/textSize"
             android:id="@+id/button_hide_markers"
             android:layout_weight="1"/>
     </LinearLayout>
@@ -71,6 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/show_markers"
+        android:textSize="@dimen/textSize"
         android:id="@+id/button_show_markers" />
 
 

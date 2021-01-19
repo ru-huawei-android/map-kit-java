@@ -188,7 +188,7 @@ public class RoutesActivity extends AppCompatActivity implements OnMapReadyCallb
 
             directionViewModel.getDrivingDirectionLiveData(requestBody)
                     .observe(RoutesActivity.this, direction -> {
-                        if (!direction.getReturnDesc().equals("OK")) {
+                        if (direction.getReturnDesc().equals("OK")) {
                             Toast.makeText(getApplicationContext(), "Cannot make the route.", Toast.LENGTH_SHORT)
                                     .show();
                             return;
