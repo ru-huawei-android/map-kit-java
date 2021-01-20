@@ -188,9 +188,10 @@ public class RoutesActivity extends AppCompatActivity implements OnMapReadyCallb
 
             directionViewModel.getDrivingDirectionLiveData(requestBody)
                     .observe(RoutesActivity.this, direction -> {
-                        if (direction.getReturnDesc().equals("OK")) {
+                        if (!direction.getReturnDesc().equals("OK")) {
                             Toast.makeText(getApplicationContext(), "Cannot make the route.", Toast.LENGTH_SHORT)
                                     .show();
+                            progressBar.setVisibility(View.GONE);
                             return;
                         }
                         Log.d(TAG, direction.toString());
@@ -228,6 +229,8 @@ public class RoutesActivity extends AppCompatActivity implements OnMapReadyCallb
                         if (!direction.getReturnDesc().equals("OK")) {
                             Toast.makeText(getApplicationContext(), "Cannot make the route.", Toast.LENGTH_SHORT)
                                     .show();
+                            progressBar.setVisibility(View.GONE);
+                            startText.setText(direction.getReturnDesc());
                             return;
                         }
                         Log.d(TAG, direction.toString());
@@ -264,6 +267,8 @@ public class RoutesActivity extends AppCompatActivity implements OnMapReadyCallb
                         if (!direction.getReturnDesc().equals("OK")) {
                             Toast.makeText(getApplicationContext(), "Cannot make the route.", Toast.LENGTH_SHORT)
                                     .show();
+                            progressBar.setVisibility(View.GONE);
+                            startText.setText(direction.getReturnDesc());
                             return;
                         }
                         Log.d(TAG, direction.toString());
